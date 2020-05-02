@@ -24,10 +24,6 @@ allow per_mgr self:capability { net_raw };
 #Needed to power on the peripheral
 allow per_mgr ssr_device:chr_file { open read };
 
-#Needed by libmdmdetect to figure out the system configuration
-#allow per_mgr sysfs_esoc:dir { open search read };
-#allow per_mgr sysfs_esoc:lnk_file { read };
-
 #Needed by libmdmdetect to get subsystem info and to check their states
 allow per_mgr sysfs_msm_subsys:dir { open search read };
 allow per_mgr sysfs_msm_subsys:file r_file_perms;

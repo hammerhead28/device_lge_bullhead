@@ -19,7 +19,5 @@ allow hal_memtrack_default system_app:file { read open getattr };
 allow hal_memtrack_default system_app:dir search;
 allow hal_memtrack_default vndservicemanager:file { read open getattr };
 allow hal_memtrack_default vndservicemanager:dir search;
-#allow hal_memtrack_default hal_allocator_default:file { read open getattr };
-#allow hal_memtrack_default hal_allocator_default:dir search;
 allow hal_memtrack_default hal_contexthub_default:file { read open getattr };
 allow hal_memtrack_default hal_contexthub_default:dir search;

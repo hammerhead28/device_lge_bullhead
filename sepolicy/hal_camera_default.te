@@ -9,5 +9,6 @@ allow hal_camera_default vndservicemanager:binder { call transfer };
 # for hal_camera_default
 vndbinder_use(hal_camera_default);
 
+# Check in the future...
 #binder_call(hal_camera_default, hal_graphics_composer)
 #binder_call(hal_camera_default, system_server)

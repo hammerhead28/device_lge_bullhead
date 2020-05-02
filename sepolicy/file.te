@@ -24,9 +24,6 @@ type qmuxd_socket, file_type;
 type location_data_file, file_type, data_file_type, core_data_file_type;
 type location_app_data_file, file_type, data_file_type;
 
-# Socket node needed by ims_data daemon
-type ims_socket, file_type;
-
 type ramdump_data_file, file_type, data_file_type, core_data_file_type;
 type diag_logs, file_type, data_file_type, core_data_file_type, mlstrustedobject;
 
@@ -89,7 +86,7 @@ type sysfs_audio, sysfs_type, fs_type;
 
 # type for memtrack
 type debugfs_kgsl, fs_type, debugfs_type;
-type sysfs_kgsl, fs_type, sysfs_type;
+type sysfs_kgsl, sysfs_type, fs_type;
 
 # type for healthd
 type sysfs_battery, fs_type, sysfs_type;
@@ -114,5 +111,4 @@ type netmgrd_socket, file_type;
 type wifihal_socket, file_type;
 
 # type for init
-type sysfs_rfkill0, fs_type, sysfs_type;
 type sysfs_poweroff, sysfs_type, fs_type;
