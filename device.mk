@@ -373,7 +373,7 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # GoogleCamera
-$(call inherit-product, packages/apps/GoogleCamera/config.mk)
+#$(call inherit-product, packages/apps/GoogleCamera/config.mk)
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
